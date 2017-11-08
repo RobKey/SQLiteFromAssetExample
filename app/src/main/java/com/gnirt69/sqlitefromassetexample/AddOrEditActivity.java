@@ -49,8 +49,6 @@ public class AddOrEditActivity extends Activity {
             txtPrice.setText(String.valueOf(product.getPrice()));
             txtDescription.setText(product.getDescription());
         }else{
-            //TODO
-            //dbHelper = new DatabaseHelper(getApplicationContext());
             Product product = dbHelper.getLastRecord();
             String Last = String.valueOf(product.getId() + 1);
             //Toast.makeText(this, "data " + Last , Toast.LENGTH_SHORT).show();
